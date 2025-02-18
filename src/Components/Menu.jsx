@@ -11,13 +11,13 @@ export default function Menu({Menus}) {
 
         return(
 
-            <div key={menu.id} className='flex gap-4 w-full'>
+            <div key={menu.id} className='flex gap-4 '>
 
-            <div className='img_container w-60 h-40   '>
+            <div className='img_container w-1/2 h-36    '>
                 <img className='w-full h-full object-cover' src={menu.img} alt="sda" />
             </div>
     
-            <div>
+            <div className='w-1/2'>
     
     
           <div>
