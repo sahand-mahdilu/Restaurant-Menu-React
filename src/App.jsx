@@ -3,6 +3,7 @@ import { useState } from 'react'
 import './App.css'
 import Categories from './Components/Categories'
 import menu from './Datas/Datas'
+import Menu from './Components/Menu'
 
 
 const allCategories= [ "all",...new Set(menu.map(m=>m.category))]
@@ -29,9 +30,12 @@ function App() {
         <Categories categories={categories} />
       </div>
 
-      <div className='menu_container' >
+      <div className='650px:grid-cols-2 p-6 menu_container grid grid-cols-1 gap-4 mt-10  ' >
 
-        
+        <Menu/>
+        <Menu/>
+        <Menu/>
+        <Menu/>
       </div>
 
 
