@@ -17,6 +17,7 @@ function App() {
   const [allMenus,setAllMenus]=useState(menu)
   const [categories, setCategories]=useState(allCategories)
 
+
   return (
     <>
     <div>
@@ -32,10 +33,8 @@ function App() {
 
       <div className='650px:grid-cols-2 p-6 menu_container grid grid-cols-1 gap-4 mt-10  ' >
 
-        <Menu/>
-        <Menu/>
-        <Menu/>
-        <Menu/>
+        <Menu Menus={allMenus} />
+     
       </div>
 
 
