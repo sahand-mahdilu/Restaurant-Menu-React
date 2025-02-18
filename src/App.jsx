@@ -18,6 +18,21 @@ function App() {
   const [categories, setCategories]=useState(allCategories)
 
 
+  const filterCategory=(categoryName)=>{
+
+
+    if(categoryName==="all"){
+      setAllMenus(menu)
+      return
+    }
+
+    let filteredCategories = menu.filter(m=>m.category===categoryName)
+
+    setAllMenus(filteredCategories)
+
+  }
+
+
   return (
     <>
     <div>
@@ -28,7 +43,7 @@ function App() {
       </div>
 
       <div className=' categories w-[100%] flex justify-center items-center mt-6'>
-        <Categories categories={categories} />
+        <Categories categories={categories} filterCategory={filterCategory} />
       </div>
 
       <div className='650px:grid-cols-2 p-6 menu_container grid grid-cols-1 gap-12 mt-10  ' >
