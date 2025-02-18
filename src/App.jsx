@@ -8,7 +8,15 @@ function App() {
 
   return (
     <>
-     <h1 className='bg-red-200'>hello world</h1>
+    <div>
+      <div className='flex flex-col justify-center items-center'>
+     <h1 className='text-center font-bold text-3xl mt-5'>Our Menu</h1>
+     <div className='mt-2 w-20 h-1 bg-yellow-600'></div>
+
+      </div>
+
+
+    </div>
     </>
   )
 }
