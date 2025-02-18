@@ -14,7 +14,7 @@ function App() {
   console.log(allCategories);
 
   const [allMenus,setAllMenus]=useState(menu)
-  const [categoris, setCategories]=useState()
+  const [categories, setCategories]=useState(allCategories)
 
   return (
     <>
@@ -26,7 +26,7 @@ function App() {
       </div>
 
       <div className=' categories w-[100%] flex justify-center items-center mt-6'>
-        <Categories/>
+        <Categories categories={categories} />
       </div>
 
 
