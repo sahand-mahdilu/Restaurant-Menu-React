@@ -1,11 +1,20 @@
+
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import Categories from './Components/Categories'
+import menu from './Datas/Datas'
+
+
+const allCategories= [ "all",...new Set(menu.map(m=>m.category))]
+
+
 
 function App() {
-  const [count, setCount] = useState(0)
+
+  console.log(allCategories);
+
+  const [allMenus,setAllMenus]=useState(menu)
+  const [categoris, setCategories]=useState()
 
   return (
     <>
