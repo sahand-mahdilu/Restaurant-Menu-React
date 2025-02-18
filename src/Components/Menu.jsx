@@ -13,8 +13,8 @@ export default function Menu() {
 
       <div>
       <div className='w-full flex items-center justify-between'>
-         <h2 className='font-bold' >Milk Shake</h2>
-         <span className='text-yellow-600'>12$</span>
+         <h2 className='font-bold text-lg' >Milk Shake</h2>
+         <span className='font-bold text-yellow-600'>12$</span>
          </div>
 
          <p className='description'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, voluptas?</p>

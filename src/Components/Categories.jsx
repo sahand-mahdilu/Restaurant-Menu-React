@@ -10,7 +10,7 @@ export default function Categories({ categories }) {
           <button
             key={index}
             className={`text-yellow-700 font-semibold transition-all duration-250 delay-75 hover:bg-yellow-700 p-2 w-20 rounded-xl hover:text-white ${
-              cat === mainCategorie ? "bg-yellow-700 text-white" : "bg-white"
+              cat === mainCategorie ? "  text-slate-50  bg-yellow-700" : "bg-white"
             }`}
           onClick={()=>{setMainCategorie(cat)}} >
             {cat}
